@@ -19,3 +19,7 @@
 .delimitationYellow{
   @apply border border-solid border-yellow-500 border-3;
 }
+
+.advantageCard:hover h3{
+  @apply text-[hsl(40,100%,50%)];
+}

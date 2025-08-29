@@ -14,30 +14,30 @@ export default function FooterSection(pros)
                 <li className="text-2xl font-medium mb-6">Contact us</li>
                 <li className="flex flex-row items-center  mb-3">
                     <div className=" aspect-square w-[2vw] bg-[url(/positionIcon.png)] bg-cover bg-norepeat mr-2"></div>
-                    <p>99 New Theme St. XY, USA 12345, Beside
+                    <p className="hover:text-[hsl(40,100%,50%)]">99 New Theme St. XY, USA 12345, Beside
                 the Sun point land.</p>
                 </li>
                 <li className="flex flex-row items-center mb-3">
                     <div className=" aspect-square w-[2vw] bg-[url(/phoneIcon.png)] bg-cover bg-norepeat mr-2"></div>
-                    <p>+00 123-456-789</p>
+                    <p className="hover:text-[hsl(40,100%,50%)]">+00 123-456-789</p>
                 </li>
                 <li className="flex flex-row items-center mb-3">
                     <div className="aspect-square w-[2vw] bg-[url(/mailIcon.png)] bg-cover bg-norepeat mr-2"></div>
-                    <p>demo@example.com</p>
+                    <p className="hover:text-[hsl(40,100%,50%)]">demo@example.com</p>
                 </li>
             </ul>
             <ul className="">
                 <li className="text-2xl font-medium mb-6">Get to know Us</li>
-                <li className=" mb-3">About Us</li>
-                <li className=" mb-3">Term & Policy</li>
-                <li className=" mb-3">Careers</li>
-                <li className=" mb-3">News & Blog</li>
+                <li className=" mb-3 hover:text-[hsl(40,100%,50%)] cursor-pointer">About Us</li>
+                <li className=" mb-3 hover:text-[hsl(40,100%,50%)] cursor-pointer">Term & Policy</li>
+                <li className=" mb-3 hover:text-[hsl(40,100%,50%)] cursor-pointer">Careers</li>
+                <li className=" mb-3 hover:text-[hsl(40,100%,50%)] cursor-pointer">News & Blog</li>
             </ul>
             <ul className="">
                 <li className="text-2xl font-medium mb-6">Information</li>
-                <li className=" mb-3">Help Center</li>
-                <li className=" mb-3">FAQs</li>
-                <li className=" mb-3">Size Guide</li>
+                <li className=" mb-3 hover:text-[hsl(40,100%,50%)] cursor-pointer">Help Center</li>
+                <li className=" mb-3 hover:text-[hsl(40,100%,50%)] cursor-pointer">FAQs</li>
+                <li className=" mb-3 hover:text-[hsl(40,100%,50%)] cursor-pointer">Size Guide</li>
             </ul>
 
         </div>

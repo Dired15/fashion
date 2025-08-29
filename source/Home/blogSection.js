@@ -22,7 +22,7 @@ export default function BlogSection(props)
 {
     const blogListElement=blogList.map((blog)=>{
         
-        return (<BlogCard title={blog.title} content={blog.content} imageUrl={blog.imageUrl}/>);
+        return (<BlogCard  key={blog.title} title={blog.title} content={blog.content} imageUrl={blog.imageUrl}/>);
     });
     return (
         <div className="bg-[hsl(0,0%,9%)] text-white flex flex-col items-center xl:px-[2%] py-20 lg:px-[3%] md:px-[3%] px-[5%]">
@@ -41,10 +41,10 @@ export function BlogCard(props){
     const style={backgroundImage:`url("${props.imageUrl}")`}
     return (
         <li className="w-[27vw]  ">
-            <div className="aspect-5/4 w-[27vw] mb-3  bg-cover bg-norepeat rounded-lg" style={style}></div>
-            <h3 className="text-lg font-medium mb-3">How to Write a Blog Post Your Readers  Will Lovein 5 Steps</h3>
+            <div className="aspect-5/4 w-[27vw] mb-3  bg-cover bg-norepeat rounded-lg cursor-pointer" style={style}></div>
+            <h3 className="text-lg font-medium mb-3 hover:text-[hsl(40,100%,50%)] cursor-pointer">How to Write a Blog Post Your Readers  Will Lovein 5 Steps</h3>
             <p className="mb-3">Why the world would end without travel coupons. The 16 worst songs about spa deals....</p>
-            <p className="underline">Read More</p>
+            <p className="underline hover:text-[hsl(40,100%,50%)] cursor-pointer">Read More</p>
         </li>
     );
 }

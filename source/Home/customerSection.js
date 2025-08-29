@@ -7,7 +7,7 @@ export default function CustomerSection(props)
                 <div className="flex flex-col justify-between w-[22%] h-fit ">
                     <h3 className="text-2xl font-medium mb-6">Trends of the Season</h3>
                     <p className="  mb-6">A never-ending rush, trendy combinations, cool steps. Check out the indispensable pieces of urban style.</p>
-                    <button className="text-white font-medium text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg w-fit ">Discover</button>
+                    <button className="cursor-pointer text-white font-medium text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg w-fit hover:bg-[hsl(40,100%,50%)] hover:text-black ">Discover</button>
                 </div>
                 <ul className="flex flex-row justify-between ">
                     <li className=" aspect-square w-[20vw] bg-[hsl(0,0%,9%)] mr-10 flex flex-col justify-center  rounded-lg p-5 ">

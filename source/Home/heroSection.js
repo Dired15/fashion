@@ -8,7 +8,7 @@ export default function HeroSection(props)
                 <div className=" xl:w-1/2 lg:w-[80%] md:w-[80%] w-full ">
                     <h2 className="text-white lg:text-5xl md:text-4xl text-4xl font-bold md:w-[80%] w-[95%] mb-8">Found:Your Favorite Fall Outfit</h2>
                     <p className="text-white text-normal mb-8 w-[70%]">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
-                    <button className="text-white font-bold text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg ">Shop Now</button>
+                    <button className="cursor-pointer text-white font-bold text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg hover:bg-[hsl(40,100%,50%)] hover:text-black ">Shop Now</button>
                 </div>
 
             </div>

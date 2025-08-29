@@ -65,14 +65,14 @@ export default function ProductSection(props)
 export  function ProductElement(props){
 
     
-    const styleImage=` aspect-4/6 w-[10vw]  bg-cover bg-norepeat mr-4`;
+    const styleImage=`cursor-pointer aspect-4/6 w-[10vw]  bg-cover bg-norepeat mr-4 rounded-lg`;
     const style={backgroundImage:`url("${props.imageUrl}")`}
 
     return (
         <li className="flex flex-row  w-[22vw] mb-10 mr-5">
            <div className={styleImage} style={style}></div>
            <div className="flex-1 flex flex-col justify-center">
-                <h3 className="font-medium text-lg mb-2">{props.title}</h3>
+                <h3 className="cursor-pointer font-medium text-lg mb-2 hover:text-[hsl(40,100%,50%)]">{props.title}</h3>
                 <StarList/>
                 <p className=" mt-2 text-lg">{props.price}</p>
             </div> 
