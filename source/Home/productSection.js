@@ -54,7 +54,7 @@ export default function ProductSection(props)
     return (
         <div className=" bg-[hsl(0,0%,9%)] text-white flex flex-col items-center xl:px-[2%] py-10 lg:px-[3%] md:px-[3%] px-[5%]">
             <h2 className="text-3xl font-medium mb-15">Featured Products</h2>
-            <ul className="flex flex-row flex-wrap">
+            <ul className="flex xl:flex-row flex-col overflow-x-auto flex-wrap xl:h-fit lg:h-[70vw] md:h-[75vw] h-[180vw] ">
               {productListElement}  
             </ul>
         </div>
@@ -65,11 +65,11 @@ export default function ProductSection(props)
 export  function ProductElement(props){
 
     
-    const styleImage=`cursor-pointer aspect-4/6 w-[10vw]  bg-cover bg-norepeat mr-4 rounded-lg`;
+    const styleImage=`cursor-pointer aspect-4/6 xl:w-[10vw] lg:w-[20vw] md:w-[20vw] w-[50vw]  bg-cover bg-norepeat mr-4 rounded-lg`;
     const style={backgroundImage:`url("${props.imageUrl}")`}
 
     return (
-        <li className="flex flex-row  w-[22vw] mb-10 mr-5">
+        <li className="flex flex-row  flex-none xl:w-[22vw] lg:w-[45vw] md:w-[45vw] w-full mb-10 mr-5">
            <div className={styleImage} style={style}></div>
            <div className="flex-1 flex flex-col justify-center">
                 <h3 className="cursor-pointer font-medium text-lg mb-2 hover:text-[hsl(40,100%,50%)]">{props.title}</h3>
@@ -84,11 +84,11 @@ export function StarList(props){
 
     return (
         <ul className=" flex flex-row  ">
-            <li className="aspect-square w-[1vw] mb-2 bg-[url(/starIconWhite.png)] bg-cover bg-norepeat"></li>
-            <li className="aspect-square w-[1vw] mb-2 bg-[url(/starIconWhite.png)] bg-cover bg-norepeat"></li>
-            <li className="aspect-square w-[1vw] mb-2 bg-[url(/starIconWhite.png)] bg-cover bg-norepeat"></li>
-            <li className="aspect-square w-[1vw] mb-2 bg-[url(/starIconWhite.png)] bg-cover bg-norepeat"></li>
-            <li className="aspect-square w-[1vw] mb-2 bg-[url(/starIconWhite.png)] bg-cover bg-norepeat"></li>
+            <li className="aspect-square md:w-[1vw] w-[5vw] mb-2 bg-[url(/starIconWhite.png)] bg-cover bg-norepeat"></li>
+            <li className="aspect-square md:w-[1vw] w-[5vw] mb-2 bg-[url(/starIconWhite.png)] bg-cover bg-norepeat"></li>
+            <li className="aspect-square md:w-[1vw] w-[5vw] mb-2 bg-[url(/starIconWhite.png)] bg-cover bg-norepeat"></li>
+            <li className="aspect-square md:w-[1vw] w-[5vw] mb-2 bg-[url(/starIconWhite.png)] bg-cover bg-norepeat"></li>
+            <li className="aspect-square md:w-[1vw] w-[5vw] mb-2 bg-[url(/starIconWhite.png)] bg-cover bg-norepeat"></li>
         </ul>
     );
 }
