@@ -29,9 +29,9 @@ export default function NavSection(props)
                 <button className="cursor-pointer aspect-square w-[2vw]  bg-cover bg-norepeat bg-[url(/search.png)]"></button>
             </form>
             <ul className="flex flex-row justify-between ">
-                <li className="cursor-pointer aspect-square md:w-[2vw] w-[6vw] mr-5 bg-cover bg-norepeat bg-[url(/person.png)]"></li>
-                <li className="cursor-pointer aspect-square md:w-[2vw] w-[6vw] mr-5 bg-cover bg-norepeat bg-[url(/heart.png)]"></li>
-                <li className="cursor-pointer aspect-square md:w-[2vw] w-[6vw]  bg-cover bg-norepeat bg-[url(/cart.png)]"></li>
+                <li className="cursor-pointer aspect-square xl:w-[2vw] md:w-[3vw] w-[6vw] mr-5 bg-cover bg-norepeat bg-[url(/person.png)]"></li>
+                <li className="cursor-pointer aspect-square xl:w-[2vw] md:w-[3vw] w-[6vw] mr-5 bg-cover bg-norepeat bg-[url(/heart.png)]"></li>
+                <li className="cursor-pointer aspect-square xl:w-[2vw] md:w-[3vw] w-[6vw]  bg-cover bg-norepeat bg-[url(/cart.png)]"></li>
             </ul>
             
 
