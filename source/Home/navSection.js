@@ -1,11 +1,21 @@
 
 "use client"
+
+import {useState} from "react";
+
 export default function NavSection(props)
 {
+    const [navOpen,setNavOpen]=useState(false);
+
+    const handleClick=(e)=>{
+        setNavOpen(!navOpen);
+    }
+
     return (
+            
         <div className=" flex flex-row justify-between items-center text-white bg-[hsl(0,0%,9%)] xl:px-[5%] lg:px-[3%] md:px-[3%] px-[5%] md:py-[2%] py-[4%]">
             <div className="flex flex-row items-center">
-                <div className="xl:hidden flex flex-row justify-between items-center mr-8 md:w-[3vw] md:h-[3vw] w-[8vw] h-[7vw] border-white border-t-4 border-b-4">
+                <div onClick={handleClick} className="xl:hidden flex flex-row justify-between items-center mr-8 md:w-[3vw] md:h-[3vw] w-[8vw] h-[7vw] border-white border-t-4 border-b-4">
                         <div className="border-t-4 w-full"></div>
                 </div>
                 <div className=" flex flex-row items-center">
@@ -13,7 +23,7 @@ export default function NavSection(props)
                     <h2 className="text-3xl ">FASHION</h2>
                 </div>    
             </div>
-            
+            <MenuNav display={navOpen} onClick={handleClick}/>
             
             <ul className=" xl:flex  flex-row justify-between items-center xl:w-[30vw] hidden font-medium  ">
                 <li className="hover:text-[hsl(40,100%,50%)] cursor-pointer">Home</li>
@@ -36,6 +46,28 @@ export default function NavSection(props)
             
 
             
+        </div>
+    );
+}
+
+export function MenuNav(props){
+
+    const display=props.display?" flex flex-col ":" hidden";
+    const style=`w-[100vw] h-[100vh] z-100 fixed top-0 left-0 bg-[hsla(0,0%,0%,0.5)] ${display}`;
+
+    return (
+        <div className={style} onClick={props.onClick}>
+            <div className="h-full w-[80%] text-white bg-black p-15 relative">
+                <div className="aspect-square w-[7vw] absolute right-10 top-10  bg-[url(/closeIcon.png)] bg-cover bg-no-repeat "></div>
+                <ul className="flex   flex-col justify-between items-center  text-lg h-[70vh]  font-medium  ">
+                <li className="hover:text-[hsl(40,100%,50%)] cursor-pointer">Home</li>
+                <li className="hover:text-[hsl(40,100%,50%)] cursor-pointer">Shop</li>
+                <li className="hover:text-[hsl(40,100%,50%)] cursor-pointer">Categories</li>
+                <li className="hover:text-[hsl(40,100%,50%)] cursor-pointer">Products</li>
+                <li className="hover:text-[hsl(40,100%,50%)] cursor-pointer">Top deals</li>
+                <li className="hover:text-[hsl(40,100%,50%)] cursor-pointer">FAQs</li>                
+            </ul>
+            </div>
         </div>
     );
 }

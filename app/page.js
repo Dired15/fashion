@@ -10,7 +10,7 @@ import FooterSection from "../source/Home/footerSection.js";
 
 export default function Home() {
   return (
-    <main>
+    <main className="">
       <NavSection/>
       <HeroSection/>
       <ShopSection/>
