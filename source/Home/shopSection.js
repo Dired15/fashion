@@ -53,28 +53,28 @@ function ServiceAdvantageList(props){
     return (
         
             <div className="flex flex-row justify-between overflow-x-auto   xl:px-[5%] mb-20 ">
-                    <div className="flex flex-row advantageCard flex-none   xl:w-[20vw] lg:w-[25vw] md:w-[40vw] w-[60vw] mr-8  ">      
+                    <div className="flex flex-row advantageCard flex-none    xl:w-[20vw] lg:w-[22vw] md:w-[30vw] w-[60vw]  xl:mr-10 mr-15  ">      
                         <div className="  aspect-square flex-none  xl:w-[4vw] lg:w-[5vw] md:w-[7vw] w-[15vw] bg-[url(/truck.png)] mr-4  bg-center bg-contain bg-no-repeat  "></div>
                         <div className="flex flex-col  flex-none lg:justify-center py-2  h-[7vw]">
                             <h3 className="font-medium text-lg">Free Shipping</h3>
                             <p>On order over $100</p>
                         </div>
                     </div>
-                    <div className="flex flex-row advantageCard flex-none   xl:w-[20vw] lg:w-[25vw] md:w-[40vw] w-[70vw] mr-8  ">
+                    <div className="flex flex-row advantageCard flex-none   xl:w-[20vw]  lg:w-[25vw] md:w-[35vw] w-[70vw] xl:mr-10 mr-15  ">
                         <div className=" aspect-square flex-none  xl:w-[4vw] lg:w-[5vw] md:w-[7vw] w-[15vw] bg-[url(/box.png)] mr-4  bg-center bg-contain bg-no-repeat "></div>
                         <div className="flex flex-col  flex-none lg:justify-center py-2  h-[7vw]">
                             <h3 className="font-medium text-lg">Flexible & Easy Return</h3>
                             <p>Return within 14 days</p>
                         </div>
                     </div>
-                    <div className="flex flex-row advantageCard flex-none   xl:w-[20vw] lg:w-[25vw] md:w-[40vw] w-[70vw] mr-8 ">
-                        <div className=" aspect-square flex-none  xl:w-[4vw] lg:w-[5vw] md:w-[7vw] w-[15vw] bg-[url(/phone.png)] mr-4  bg-center bg-contain bg-no-repeat "></div>
+                    <div className="flex flex-row advantageCard flex-none    xl:w-[20vw] lg:w-[30vw] md:w-[37vw] w-[70vw] xl:mr-10 mr-15 ">
+                        <div className=" aspect-square flex-none   xl:w-[4vw] lg:w-[5vw] md:w-[7vw] w-[15vw] bg-[url(/phone.png)] mr-4  bg-center bg-contain bg-no-repeat "></div>
                         <div className="flex flex-col  flex-none lg:justify-center py-2  h-[7vw]">
                             <h3 className="font-medium text-lg">24/7 Support Services</h3>
                             <p>Any Time Customer Support</p>
                         </div>
                     </div>
-                    <div className="flex flex-row advantageCard  flex-none  xl:w-[20vw] lg:w-[25vw] md:w-[40vw] w-[80vw]  ">
+                    <div className="flex flex-row advantageCard  flex-none   xl:w-[20vw] lg:w-[30vw] md:w-[40vw] w-[80vw]  ">
                         <div className=" aspect-square flex-none  xl:w-[4vw] lg:w-[5vw] md:w-[7vw] w-[15vw] bg-[url(/payment.png)] mr-4  bg-center bg-contain bg-no-repeat"></div>
                         <div className="flex flex-col  flex-none lg:justify-center py-2  h-[7vw]">
                             <h3 className="font-medium text-lg">Secure payment</h3>
