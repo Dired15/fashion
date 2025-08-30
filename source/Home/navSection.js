@@ -58,7 +58,7 @@ export function MenuNav(props){
     return (
         <div className={style} onClick={props.onClick}>
             <div className="h-full w-[80%] text-white bg-black p-15 relative">
-                <div className="aspect-square w-[7vw] absolute right-10 top-10  bg-[url(/closeIcon.png)] bg-cover bg-no-repeat "></div>
+                <div className="aspect-square w-[7vw] lg:w-[5vw] absolute right-10 top-10  bg-[url(/closeIcon.png)] bg-cover bg-no-repeat "></div>
                 <ul className="flex   flex-col justify-between items-center  text-lg h-[70vh]  font-medium  ">
                 <li className="hover:text-[hsl(40,100%,50%)] cursor-pointer">Home</li>
                 <li className="hover:text-[hsl(40,100%,50%)] cursor-pointer">Shop</li>
