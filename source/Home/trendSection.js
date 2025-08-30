@@ -92,9 +92,17 @@ export function TopProductSection(props)
     return (
         <div className=" flex flex-col items-center xl:px-[2%] lg:px-[3%] md:px-[3%] px-[5%]">
                 <h2 className="text-3xl font-medium mb-10">Top Rated Products</h2>
-                <ul className="flex flex-row justify-between overflow-x-auto w-full">
-                    {productListElement}
-                </ul>
+                <div className="flex-none relative w-full">
+                    <button className="xl:hidden absolute aspect-square rotate-180 md:w-[5vw] w-[10vw] -left-5 rounded-full z-100  top-[45%]  bg-[hsl(210,9%,31%)]">
+                        <div className="aspect-square w-full  bg-[url(/arrowIcon.png)] bg-cover bg-no-repeat  delimtiationRed"></div>
+                    </button>
+                    <button className=" xl:hidden absolute aspect-square  md:w-[5vw] w-[10vw] -right-5 rounded-full  z-100 top-[45%]  bg-[hsl(210,9%,31%)]">
+                        <div className="aspect-square w-full  bg-[url(/arrowIcon.png)] bg-cover bg-no-repeat  delimtiationRed"></div>
+                    </button>
+                    <ul className="flex flex-row justify-between overflow-x-auto w-full">
+                        {productListElement}
+                    </ul>
+                </div>
         </div>
     );
 }

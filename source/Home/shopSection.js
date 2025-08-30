@@ -90,23 +90,33 @@ function ServiceAdvantageList(props){
 function TrendOfTheSeason(props){
 
     return (
-            <div className="flex md:flex-row md:justify-between flex-col  md:items-center mb-20  xl:px-[5%] lg:px-[3%] md:px-[3%] px-[5%]">
+            <div className="relative flex md:flex-row md:justify-between flex-col  md:items-center mb-20  xl:px-[5%] lg:px-[3%] md:px-[3%] px-[5%]">
                 <div className="flex flex-col justify-between xl:w-[22%] lg:w-[27%] md:w-[35%] h-fit md:mb-0 mb-10 ">
                     <h3 className="text-2xl font-medium md:mb-6 mb-4">Trends of the Season</h3>
                     <p className="  md:mb-6 mb-4 md:w-auto w-[80vw]">A never-ending rush, trendy combinations, cool steps. Check out the indispensable pieces of urban style.</p>
                     <button className="cursor-pointer text-white font-medium text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg w-fit hover:bg-[hsl(40,100%,50%)] hover:text-black ">Discover</button>
                 </div>
-                <ul className="flex flex-row justify-between overflow-x-auto xl:w-fit lg:w-[65vw] md:w-[60vw] w-full  ">
-                    <li className="cursor-pointer aspect-3/4 xl:w-[20vw] lg:w-[30vw] md:w-[28vw] w-[45vw] lg:mr-10 md:mr-5 mr-5 flex flex-row flex-none justify-center items-end rounded-lg bg-[url(/bgModel1.jpg)] bg-cover bg-norepeat">
-                        <button className="cursor-pointer text-white font-medium text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg w-fit mb-10 hover:bg-[hsl(40,100%,50%)] hover:text-black ">Clothes</button>
-                    </li>
-                    <li className="cursor-pointer aspect-3/4 xl:w-[20vw] lg:w-[30vw] md:w-[28vw] w-[45vw] lg:mr-10 md:mr-5 mr-5 flex flex-row flex-none justify-center items-end rounded-lg bg-[url(/bgModel2.jpg)] bg-cover bg-norepeat">
-                        <button className=" cursor-pointer text-white font-medium text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg w-fit mb-10 hover:bg-[hsl(40,100%,50%)] hover:text-black ">Dress</button>
-                    </li>
-                    <li className="cursor-pointer aspect-3/4 xl:w-[20vw] lg:w-[30vw] md:w-[28vw] w-[45vw] flex flex-row flex-none justify-center items-end rounded-lg bg-[url(/bgModel3.jpg)] bg-cover bg-norepeat">
-                        <button className=" cursor-pointer text-white font-medium text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg w-fit mb-10 hover:bg-[hsl(40,100%,50%)] hover:text-black ">Pants</button>
-                    </li>
-                </ul>
+                <div className="relative flex-none ">
+
+                    <button className="xl:hidden absolute aspect-square rotate-180 md:w-[5vw] w-[10vw] -left-5 rounded-full z-100  top-[45%]  bg-[hsl(210,9%,31%)]">
+                        <div className="aspect-square w-full  bg-[url(/arrowIcon.png)] bg-cover bg-no-repeat  delimtiationRed"></div>
+                    </button>
+                    <button className=" xl:hidden absolute aspect-square  md:w-[5vw] w-[10vw] -right-5 rounded-full  z-100 top-[45%]  bg-[hsl(210,9%,31%)]">
+                        <div className="aspect-square w-full  bg-[url(/arrowIcon.png)] bg-cover bg-no-repeat  delimtiationRed"></div>
+                    </button>
+                    <ul className="relative flex flex-row justify-between overflow-x-auto xl:w-fit lg:w-[65vw] md:w-[60vw] w-full  ">
+                        <li className="cursor-pointer aspect-3/4 xl:w-[20vw] lg:w-[30vw] md:w-[28vw] w-[45vw] lg:mr-10 md:mr-5 mr-5 flex flex-row flex-none justify-center items-end rounded-lg bg-[url(/bgModel1.jpg)] bg-cover bg-norepeat">
+                            <button className="cursor-pointer text-white font-medium text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg w-fit mb-10 hover:bg-[hsl(40,100%,50%)] hover:text-black ">Clothes</button>
+                        </li>
+                        <li className="cursor-pointer aspect-3/4 xl:w-[20vw] lg:w-[30vw] md:w-[28vw] w-[45vw] lg:mr-10 md:mr-5 mr-5 flex flex-row flex-none justify-center items-end rounded-lg bg-[url(/bgModel2.jpg)] bg-cover bg-norepeat">
+                            <button className=" cursor-pointer text-white font-medium text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg w-fit mb-10 hover:bg-[hsl(40,100%,50%)] hover:text-black ">Dress</button>
+                        </li>
+                        <li className="cursor-pointer aspect-3/4 xl:w-[20vw] lg:w-[30vw] md:w-[28vw] w-[45vw] flex flex-row flex-none justify-center items-end rounded-lg bg-[url(/bgModel3.jpg)] bg-cover bg-norepeat">
+                            <button className=" cursor-pointer text-white font-medium text-normal px-8 py-3 bg-[hsl(210,9%,31%)] rounded-lg w-fit mb-10 hover:bg-[hsl(40,100%,50%)] hover:text-black ">Pants</button>
+                        </li>
+                    </ul>    
+                </div>
+                
             </div>
            );
 }
@@ -120,9 +130,17 @@ function HandPickedSection(props){
     return (
             <div className=" flex flex-col items-center xl:px-[2%] lg:px-[3%] md:px-[3%] px-[5%]">
                 <h2 className="text-3xl font-medium mb-10">Hand-Picked Daily</h2>
-                <ul className="flex flex-row justify-between overflow-x-auto w-full">
-                    {productElementList}
-                </ul>
+                <div className="flex-none relative w-full">
+                    <button className="xl:hidden absolute aspect-square rotate-180 md:w-[5vw] w-[10vw] -left-5 rounded-full z-100  top-[45%]  bg-[hsl(210,9%,31%)]">
+                        <div className="aspect-square w-full  bg-[url(/arrowIcon.png)] bg-cover bg-no-repeat  delimtiationRed"></div>
+                    </button>
+                    <button className=" xl:hidden absolute aspect-square   md:w-[5vw] w-[10vw] -right-5 rounded-full  z-100 top-[45%]  bg-[hsl(210,9%,31%)]">
+                        <div className="aspect-square w-full  bg-[url(/arrowIcon.png)] bg-cover bg-no-repeat  delimtiationRed"></div>
+                    </button>
+                    <ul className="flex flex-row justify-between overflow-x-auto w-full">
+                        {productElementList}
+                    </ul>
+                </div>
             </div>
            );
 }

@@ -54,9 +54,17 @@ export default function ProductSection(props)
     return (
         <div className=" bg-[hsl(0,0%,9%)] text-white flex flex-col items-center xl:px-[2%] py-10 lg:px-[3%] md:px-[3%] px-[5%]">
             <h2 className="text-3xl font-medium mb-15">Featured Products</h2>
-            <ul className="flex xl:flex-row flex-col overflow-x-auto flex-wrap xl:h-fit lg:h-[70vw] md:h-[75vw] h-[180vw] ">
-              {productListElement}  
-            </ul>
+            <div className="flex-none relative ">
+                <button className="xl:hidden absolute aspect-square rotate-180 md:w-[5vw] w-[10vw] -left-5 rounded-full z-100  top-[45%]  bg-[hsl(210,9%,31%)]">
+                        <div className="aspect-square w-full  bg-[url(/arrowIcon.png)] bg-cover bg-no-repeat  delimtiationRed"></div>
+                    </button>
+                    <button className=" xl:hidden absolute aspect-square  md:w-[5vw] w-[10vw] -right-5 rounded-full  z-100 top-[45%]  bg-[hsl(210,9%,31%)]">
+                        <div className="aspect-square w-full  bg-[url(/arrowIcon.png)] bg-cover bg-no-repeat  delimtiationRed"></div>
+                    </button>
+                <ul className="flex xl:flex-row flex-col overflow-x-auto flex-wrap xl:h-fit lg:h-[70vw] md:h-[75vw] h-[180vw] ">
+                    {productListElement}  
+                </ul>
+            </div>
         </div>
     );
 }
