@@ -53,7 +53,7 @@ export default function NavSection(props)
 export function MenuNav(props){
 
     const display=props.display?" flex flex-col ":" hidden";
-    const style=`w-[100vw] h-[100vh] z-100 fixed top-0 left-0 bg-[hsla(0,0%,0%,0.5)] ${display}`;
+    const style=`w-[100vw] h-[100vh] z-300 fixed top-0 left-0 bg-[hsla(0,0%,0%,0.5)] ${display}`;
 
     return (
         <div className={style} onClick={props.onClick}>
